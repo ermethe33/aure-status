@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Status di AureMyDrion</title>
+    <style>
+        body { font-family: monospace; background-color: #000; color: #0f0; padding: 2rem; }
+        h1 { color: #0ff; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Status di AureMyDrion</h1>
+    <pre id="status">Caricamento...</pre>
+    <script>
+        fetch("status.json")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("status").textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(err => {
+                document.getElementById("status").innerHTML = "<span class='error'>Errore nel caricamento: " + err + "</span>";
+            });
+    </script>
+</body>
+</html>

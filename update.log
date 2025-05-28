@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/ermethe/Desktop/archivio_github/aure_status_web/update_status.py", line 5, in <module>
+    from api_bridge import get_account_balance, get_sniper_status, get_grid_bots
+ModuleNotFoundError: No module named 'api_bridge'

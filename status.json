@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-05-27T12:55:00Z",
+  "status": "attivo",
+  "exchange": "Pionex",
+  "bot_attivi": 3,
+  "sniper_attivi": 4,
+  "wallet": {
+    "binance": {
+      "USDT": 173.84,
+      "ADA": 510.12
+    },
+    "pionex": {
+      "USDT": 628.98,
+      "WIF": 334.17
+    }
+  }
+}
