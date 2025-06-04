@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv(dotenv_path="api_config.env")
 
-REPO_PATH = os.path.expanduser("~/Desktop/aure-status")
+# Percorso del repository. Utilizziamo la cartella che contiene questo
+# script per evitare path assoluti che potrebbero non esistere.
+REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 STATUS_PATH = os.path.join(REPO_PATH, "status.json")
 
 def aggiorna_status():
